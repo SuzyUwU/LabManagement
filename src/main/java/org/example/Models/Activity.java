@@ -34,7 +34,7 @@ public class Activity {
     }
 
     private void initializeCollections() {
-        String uri = "mongodb+srv://EmilyLuzlieSuzy:Aku201705@lab.xqywn.mongodb.net/?retryWrites=true&w=majority&appName=Lab"; // MongoDB connection URI
+        String uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 
         try {
             MongoClient mongoClient = MongoClients.create(uri);

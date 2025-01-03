@@ -10,7 +10,7 @@ public class Lab {
     private final MongoCollection<Document> labCollection;
 
     public Lab() {
-        String uri = "mongodb+srv://EmilyLuzlieSuzy:Aku201705@lab.xqywn.mongodb.net/?retryWrites=true&w=majority&appName=Lab";
+        String uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
         MongoClient mongoClient = MongoClients.create(uri);
         MongoDatabase database = mongoClient.getDatabase("LabManagementDB");
 

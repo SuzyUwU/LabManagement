@@ -9,7 +9,7 @@ public class User {
     private long currentUserId;
 
     public User() {
-        String uri = "mongodb+srv://EmilyLuzlieSuzy:Aku201705@lab.xqywn.mongodb.net/?retryWrites=true&w=majority&appName=Lab";
+        String uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
         MongoClient mongoClient = MongoClients.create(uri);
         MongoDatabase database = mongoClient.getDatabase("UserProfileDB");
 
